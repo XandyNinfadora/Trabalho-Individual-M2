@@ -1,40 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
+
 <body>
-<input type="text" placeholder="Digite seu nome" id="textoInput">
-<button id="botaoCod" type="submit" onclick="textoCod(document.getElementById('textoInput').value)"> Codificar </button>
 
-<textarea id="textoVazio"> texto aqui </textarea>
+    <!-- Botão da Base64 -->
+    <input type="text" placeholder="Digite seu nome" id="textoInput">
+    <button id="botaoCod" type="submit"
+        onclick="textoCod(document.getElementById('textoInput').value)">Codificar</button>
+    <textarea id="textoVazio">Seu texto aqui! </textarea>
+    <button id="botaoUnCod" type="submit"
+        onclick="textoUnCod(document.getElementById('textoVazio').value)">Decodificar</button>
 
-<button id="botaoUnCod" type="submit" onclick="textoUnCod(document.getElementById('textoVazio').value)"> Decodificar </button>
+    <!-- Botão da Cifra de César  -->
 
+    <input type="text" placeholder="Digite seu nome" id="textoInputCF">
+    <button id="botaoCodCF" type="submit"
+        onclick="textoCodCF(document.getElementById('textoInputCF').value)">Codificar</button>
+    <button id="botaoUnCodCF" type="submit"
+        onclick="textoUnCodCF(document.getElementById('textoVazio').value)">Decodificar</button>
 
-<script>
-
-function textoCod(textoInput) {
-    let textoCod = btoa(textoInput);
-    let meinhaDiv = document.querySelector('textarea');
-    meinhaDiv.textContent = (textoCod);
-    
-
-    
-}
-
-function textoUnCod (textoCod) {
-    let textoUnCoded = atob (textoCod);
-    let textoCodificado = document.querySelector('textarea');
-    textoCodificado.textContent = (textoUnCoded);
-}
-
-</script>
-
-
+    <script src="Js/JavaScript.js"> </script>
 
 </body>
+
 </html>
