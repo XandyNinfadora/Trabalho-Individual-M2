@@ -31,43 +31,29 @@ function textoCodCF(textoInputCF) {
 }
 
 function textoUnCodCF(textoCodCF) {
-    let textoUnCodedCF = cifraCesarUnCod(textoCodCF, -3);
+    let textoUnCodedCF = cifraCesarUnCod(textoCodCF, 3);
     let textoCodificadoCF = document.querySelector('textarea');
     textoCodificadoCF.textContent = (textoUnCodedCF);
 }
 
 
-function cifraCesarUnCod(text, s) {
-
-    let result = ""
-    for (let i = 0; i < text.length; i++) {
-        let char = text[i];
-        if (char.toUpperCase(text[i])) {
-            let ch = String.fromCharCode((char.charCodeAt(0) + s - 65) % 26 + 65);
-            result += ch;
-        }
-        else {
-            let ch = String.fromCharCode((char.charCodeAt(0) + s - 97) % 26 + 97);
-            result += ch;
-        }
+function cifraCesar(texto, incremento) {
+    let codificado = "";
+    for (let i = 0; i < texto.length; i++) {
+        let charCode = texto[i];
+        let charCodificado = String.fromCharCode((charCode.charCodeAt(0) + incremento + 65) - 65);
+        codificado += charCodificado;
     }
-    return result;
-
+    return codificado;
 }
 
-function cifraCesar(text, s) {
-
-    let result = ""
-    for (let i = 0; i < text.length; i++) {
-        let char = text[i];
-        if (char.toUpperCase(text[i])) {
-            let ch = String.fromCharCode((char.charCodeAt(0) + s - 65) % 26 + 65);
-            result += ch;
-        }
-        else {
-            let ch = String.fromCharCode((char.charCodeAt(0) + s - 97) % 26 + 97);
-            result += ch;
-        }
+function cifraCesarUnCod(texto, incremento) {
+    let descodificado = "";
+    for (let i = 0; i < texto.length; i++) {
+        let charCodificado = texto[i];
+        let charDescodificado = String.fromCharCode((charCodificado.charCodeAt(0) - incremento - 65) + 65);
+        descodificado += charDescodificado;
     }
-    return result;
+    return descodificado;
+
 }
