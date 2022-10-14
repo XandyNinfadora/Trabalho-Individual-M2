@@ -40,6 +40,10 @@ body {
     font-weight: bold;
     padding: 70px;
     border-radius: 120px;
+    font-size: 20px;
+    font-weight: bolder;
+    line-height: 1.5;
+    text-indent: 2em;
 
 }
 
@@ -52,4 +56,12 @@ body {
 #campos {
     display: flex;
     justify-content: space-evenly;
+}
+#incremento {
+
+    background-color: white;
+    border: 1px solid black;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 18px;
 }
