@@ -1,5 +1,4 @@
-# Projeto-Indv-1
-Projeto individual de criação da página.
-Olá, meu nome é Andrielle e fiz essa atividade que tinha como objetivo fazer uma página falando sobre você. Nesse arquivo está minhas quatro páginas, o arquivo csss(pasta css e afins) junto das fontes e separado as fotos e que foram utilizadas no trabalho.
-O arquivo index.html é o principal e pode ser executado através do navegador, os botões vão redirecionados para outras páginas e espero que goste do meu trabalho!
-Além de ter a própria página através desse link para entrar > https://xandyninfadora.github.io/Projeto-Indv-1/
+# Trabalho individual módulo 2
+Projeto individual de criação de uma página onde seja codificado e decodificado em Base64 e Cifra de César.
+O arquivo index.html está a página e pode ser executado através do navegador. Há um arquivo csss e javascript na pasta de mesmo nome, além da imagem de background está na pasta imagem.
+Além de ter a própria página através desse link para entrar > https://xandyninfadora.github.io/Trabalho-Individual-M2/
