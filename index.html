@@ -6,31 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<link rel="stylesheet" href="Css/Estilizacao.css">
+    <link rel="stylesheet" href="Css/Estilizacao.css">
+    <script src="Js/JavaScript.js"> </script>
 
 </head>
 
 <body>
-    <div class="background">
+    <div class="caixaCodificar">
+        <center>
+            <h1> C0D1F1C4R M3NS4G3NS </h1>
+            <p> utiize esse dois métodos para cripografar suas mensagens </p>
+            <h2> Selecione o tipo de cripografia que será utilizada </h2>
+            <input type="number" id="incremento" placeholder="Insira número Incrimentador">
+            <input type="radio" name="escolha" id="cifraCs" onclick="nowYouSee()">
+            <label for="cifraCs">Cifra de César</label>
+            <input type="radio" name="escolha" id="base64" onclick="nowYouDont()">
+            <label for="base64">Base64</label>
+            <textarea type="text" id="textoInput" placeholder="Seu texto para condificar" rows="3"></textarea>
+            <button id="botaoCod" type="submit" onclick="codificandoCFeB64()" value="enviar">Codificar</button>
+            <button id="botaoUnCod" type="submit" onclick="descodificandoCFeB64()" value="enviar">Decodificar</button>
+            <textarea id="textoVazio" type="text" rows="3" placeholder="Seu texto codificado aqui"></textarea>
+
+        </center>
+
 
     </div>
-    <!-- Botão da Base64 -->
-    <input type="text" placeholder="Digite seu nome" id="textoInput">
-    <button id="botaoCod" type="submit"
-        onclick="textoCod(document.getElementById('textoInput').value)">Codificar</button>
-    <textarea id="textoVazio">Seu texto aqui! </textarea>
-    <button id="botaoUnCod" type="submit"
-        onclick="textoUnCod(document.getElementById('textoVazio').value)">Decodificar</button>
 
-    <!-- Botão da Cifra de César  -->
-
-    <input type="text" placeholder="Digite seu nome" id="textoInputCF">
-    <button id="botaoCodCF" type="submit"
-        onclick="textoCodCF(document.getElementById('textoInputCF').value)">Codificar</button>
-    <button id="botaoUnCodCF" type="submit"
-        onclick="textoUnCodCF(document.getElementById('textoVazio').value)">Decodificar</button>
-
-    <script src="Js/JavaScript.js"> </script>
 
 </body>
 

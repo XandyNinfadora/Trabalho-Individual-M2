@@ -4,3 +4,22 @@ body {
     background: #FFFFFF url("../Imagens/ATPNG.jpg") no-repeat;
 
 }
+#textoInput {
+    background-color: #dbdbdb;
+    border: 2px outset rgb(255, 234, 0);
+    opacity: 0.9;
+    width: 180px;
+    padding-bottom: 100px;    
+}
+
+#textoVazio {
+    background-color: #dbdbdb;
+    border: 2px outset rgb(255, 234, 0);
+    opacity: 0.9;
+    width: 180px;
+    padding-bottom: 100px;    
+}
+* {
+    margin: 0;
+    padding: 0;
+}
