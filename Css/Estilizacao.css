@@ -4,22 +4,52 @@ body {
     background: #FFFFFF url("../Imagens/ATPNG.jpg") no-repeat;
 
 }
-#textoInput {
-    background-color: #dbdbdb;
-    border: 2px outset rgb(255, 234, 0);
-    opacity: 0.9;
-    width: 180px;
-    padding-bottom: 100px;    
-}
 
-#textoVazio {
-    background-color: #dbdbdb;
-    border: 2px outset rgb(255, 234, 0);
-    opacity: 0.9;
-    width: 180px;
-    padding-bottom: 100px;    
-}
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#JJ {
+    display: flex;
+    justify-content: center;
+}
+
+.caixaCodificar {
+
+    font-size: 16px;
+    font-weight: bolder;
+    line-height: 1.5;
+    text-indent: 2em;
+    width: 850px;
+    height: 650px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3%;
+    box-shadow: 3px 3px 50px 10px #aeffe09a;
+    border-radius: 50px;
+
+
+}
+
+.textArea {
+    margin-top: 3%;
+    background-color: white;
+    border: 1px solid black;
+    font-weight: bold;
+    padding: 70px;
+    border-radius: 120px;
+
+}
+
+.botao {
+    margin-top: 2%;
+    padding: 10px;
+
+}
+
+#campos {
+    display: flex;
+    justify-content: space-evenly;
 }

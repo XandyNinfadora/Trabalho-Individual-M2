@@ -12,27 +12,46 @@
 </head>
 
 <body>
-    <div class="caixaCodificar">
-        <center>
+    <div id="JJ">
+        <div class="caixaCodificar">
+
             <h1> C0D1F1C4R M3NS4G3NS </h1>
-            <p> utiize esse dois métodos para cripografar suas mensagens </p>
+            <br>
+            <p> utiize esse dois métodos para cripografar suas mensagens, eles obedecem letras maiúsculas, menúsculas e
+                espaços, porém está programado para ignorar quaisquer outras coisas como caracteres espeicais e acentos.
+            </p>
+            <br>
             <h2> Selecione o tipo de cripografia que será utilizada </h2>
-            <input type="number" id="incremento" placeholder="Insira número Incrimentador">
+            <br>
+            <input type="number" id="incremento" placeholder="Insira um nº incrementador">
+            <br>
+            <br>
             <input type="radio" name="escolha" id="cifraCs" onclick="nowYouSee()">
             <label for="cifraCs">Cifra de César</label>
+            <br>
             <input type="radio" name="escolha" id="base64" onclick="nowYouDont()">
             <label for="base64">Base64</label>
-            <textarea type="text" id="textoInput" placeholder="Seu texto para condificar" rows="3"></textarea>
-            <button id="botaoCod" type="submit" onclick="codificandoCFeB64()" value="enviar">Codificar</button>
-            <button id="botaoUnCod" type="submit" onclick="descodificandoCFeB64()" value="enviar">Decodificar</button>
-            <textarea id="textoVazio" type="text" rows="3" placeholder="Seu texto codificado aqui"></textarea>
+            <br>
+            <div id="campos">
+                <textarea class="textArea" type="text" id="textoInput" placeholder="Seu texto para condificar"
+                    rows="3"></textarea>
+                <br>
 
-        </center>
 
+                <textarea class="textArea" id="textoVazio" type="text" rows="3"
+                    placeholder="Seu texto codificado aqui"></textarea>
+            </div>
+            <div class="botao">
+                <button id="botaoCod" type="submit" onclick="codificandoCFeB64()" value="enviar">Codificar</button>
+                <button id="botaoUnCod" type="submit" onclick="descodificandoCFeB64()"
+                    value="enviar">Decodificar</button>
+            </div>
+
+
+
+        </div>
 
     </div>
-
-
 </body>
 
 </html>
