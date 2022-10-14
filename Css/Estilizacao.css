@@ -2,13 +2,14 @@ body {
     Cursor: url(CURSOR2.cur), default;
     background-color: #FFFFFF;
     background: #FFFFFF url("../Imagens/ATPNG.jpg") no-repeat;
-
+    background-size: 100%;
 }
 
 * {
     margin: 0;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
+    
 }
 
 #JJ {
@@ -17,30 +18,37 @@ body {
 }
 
 .caixaCodificar {
-
     font-size: 16px;
     font-weight: bolder;
     line-height: 1.5;
-    text-indent: 2em;
-    width: 850px;
-    height: 650px;
+    width: 40%;
     justify-content: center;
     text-align: center;
     margin-top: 3%;
-    box-shadow: 3px 3px 50px 10px #aeffe09a;
-    border-radius: 50px;
-
+    box-shadow: 3px 3px 50px 30px #aeffe09a;
+    border-radius: 10px;
+    background-color: #aeffe088;
 
 }
 
+h1 {
+    color:   #FF4539;
+    text-shadow:#bebebe 2px 2px 2px;
+
+}
+
+h2 {
+    color: #FFAF1C;
+    text-shadow:#e0e0df 2px 2px 2px;
+}
+
 .textArea {
-    margin-top: 3%;
-    background-color: white;
-    border: 1px solid black;
+    margin-top: 2%;
+    background-color: rgb(236, 236, 236);
     font-weight: bold;
-    padding: 70px;
-    border-radius: 120px;
-    font-size: 20px;
+    padding: 6px;
+    border-radius: 10px;
+    font-size: 15px;
     font-weight: bolder;
     line-height: 1.5;
     text-indent: 2em;
@@ -48,7 +56,6 @@ body {
 }
 
 .botao {
-    margin-top: 2%;
     padding: 10px;
 
 }
@@ -58,10 +65,39 @@ body {
     justify-content: space-evenly;
 }
 #incremento {
-
     background-color: white;
     border: 1px solid black;
     font-weight: bold;
-    padding: 10px;
-    font-size: 18px;
+    padding: 4px;
+    font-size: 12px;
+}
+
+#botaoCod:hover {
+    color: #C7199C;
+}
+
+#botaoUnCod:hover {
+    color: #00cfcf;
+}
+
+#textoVazio {
+    border: 2px solid #C7199C;
+
+}
+#textoInput {
+    border:2px solid  #001AD3;
+
+}
+
+
+#incremento {
+    border: 3px solid #01B671;
+}
+
+p {
+    color: #998f00;
+}
+
+label {
+    color: #00d8d8;
 }

@@ -11,22 +11,14 @@
 
 </head>
 
-<!-- COLOCAR BANDEIRAS LGBTQS E TAMBÉM LANÇAR OS MEUS CRÉDITOS-->
-
-
-
-
-
-
-
 <body>
     <div id="JJ">
         <div class="caixaCodificar">
 
             <h1> C0D1F1C4R M3NS4G3NS </h1>
             <br>
-            <p> utiize esse dois métodos para cripografar suas mensagens, eles obedecem letras maiúsculas, menúsculas e
-                espaços, porém está programado para ignorar quaisquer outras coisas como caracteres espeicais e acentos.
+            <p> Utilize esses dois métodos para cripografar suas mensagens! Eles obedecem letras maiúsculas, minúsculas e
+                espaços, porém está programado para ignorar caracteres especiais e acentos.
             </p>
             <br>
             <h2> Selecione o tipo de cripografia que será utilizada </h2>
@@ -35,7 +27,7 @@
             <br>
             <br>
             <input type="radio" name="escolha" id="cifraCs" onclick="nowYouSee()">
-            <label for="cifraCs">Cifra de César</label>
+            <label for="cifraCs" id="lbCifraCs" >Cifra de César</label>
             <br>
             <input type="radio" name="escolha" id="base64" onclick="nowYouDont()">
             <label for="base64">Base64</label>
@@ -44,8 +36,6 @@
                 <textarea class="textArea" type="text" id="textoInput" placeholder="Seu texto para condificar"
                     rows="3"></textarea>
                 <br>
-
-
                 <textarea class="textArea" id="textoVazio" type="text" rows="3"
                     placeholder="Seu texto codificado aqui"></textarea>
             </div>
